@@ -45,7 +45,7 @@
         app:layout_constraintWidth_percent="0.4" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/selectFrom"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
@@ -55,14 +55,14 @@
         app:layout_constraintWidth_percent="0.4" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/selectTo"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
         app:layout_constraintWidth_percent="0.4"
-        app:layout_constraintEnd_toEndOf="@+id/spinner"
-        app:layout_constraintStart_toStartOf="@+id/spinner"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintEnd_toEndOf="@+id/selectFrom"
+        app:layout_constraintStart_toStartOf="@+id/selectFrom"
+        app:layout_constraintTop_toBottomOf="@+id/selectFrom" />
 
     <TextView
         android:id="@+id/textView2"
@@ -71,9 +71,9 @@
         android:layout_marginStart="16dp"
         android:text="Into:"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner2"
+        app:layout_constraintBottom_toBottomOf="@+id/selectTo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/spinner2" />
+        app:layout_constraintTop_toTopOf="@+id/selectTo" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -109,8 +109,10 @@
         <TextView
             android:id="@+id/tvResult"
             android:layout_width="0dp"
-            android:layout_height="77dp"
-            android:text="TextView"
+            android:layout_height="80dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text=""
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
